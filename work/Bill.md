@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+OJ3017-Bill
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+546753
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+this prblem want to take price and combine with service price and 7% vat and service price is 10% of the price and lowest service price is 50 and most is 1000 and vat is 7% of all price and sevice price combine and output is the result of all combine
 ```
 
 ---
@@ -93,9 +93,12 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:take int input as num
+Step 2:make new variable as ser to contain 10% of num
+Step 3:check if ser <= 50 make (num+50)*(107/100) as rs
+        elif ser >= 1000 make (num+1000)*(107/100) as rs
+        else make (num+ser)*(107/100) as rs
+Step 4:print rs and make it 2 digit deciamal by f"{rs:.2f}"
 ```
 
 ---
@@ -115,7 +118,12 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1:take int input as num
+Step 2:make new variable as ser to contain 10% of num
+Step 3:check if ser <= 50 make (num+50)*(107/100) as rs
+        elif ser >= 1000 make (num+1000)*(107/100) as rs
+        else make (num+ser)*(107/100) as rs
+Step 4:print rs and make it 2 digit deciamal by f"{rs:.2f}"
 ```
 
 ---
@@ -135,31 +143,31 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+check in ijudge
 ```
 
 Input:
 
 ```text
-
+100
 ```
 
 Expected output:
 
 ```text
-
+160.50
 ```
 
 Actual output:
 
 ```text
-
+160.50
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +175,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+check ijugde
 ```
 
 Input:
 
 ```text
-
+1888
 ```
 
 Expected output:
 
 ```text
-
+2222.18
 ```
 
 Actual output:
 
 ```text
-
+2222.18
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +207,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+check ijugde
 ```
 
 Input:
 
 ```text
-
+99999
 ```
 
 Expected output:
 
 ```text
-
+108068.93
 ```
 
 Actual output:
 
 ```text
-
+108068.93
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +241,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +259,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -305,10 +313,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes|
+| I understand my final code. |Yes|
+| I recorded the real OJ status. |Yes|
+| I did not copy AI-generated text directly into this file. |Yes|
+| I did not copy code from another person. |Yes|
+| If I received human help, I disclosed it in this file. |No|
+| I submitted the final code to the OJ by myself. |Yes|

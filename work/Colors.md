@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+OJ3011 - Colors
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+545861
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+0-15 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+take first color than second color from input if it not red yellow blue it will Error if input correct it will print the mixed color in return
 ```
 
 ---
@@ -93,9 +93,10 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:take input as fst and snd
+Step 2:if fst and another 2 elif for 3 color and else for error
+Step 3:make if snd and anorher 2 elif for 3 color and else for error in every if and elif of fst
+Step 4:make it print color for correct anw
 ```
 
 ---
@@ -115,7 +116,11 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1:take input as fst and snd
+Step 2:if fst and another 2 elif for 3 color and else for error
+Step 3:make if snd and anorher 2 elif for 3 color and else for error in every if and elif of fst
+Step 4:make it print color for correct anw
+it right anw
 ```
 
 ---
@@ -135,31 +140,32 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+it can check in ijudge
 ```
 
 Input:
 
 ```text
-
+Red
+Yellow
 ```
 
 Expected output:
 
 ```text
-
+Orange
 ```
 
 Actual output:
 
 ```text
-
+Orange
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +173,32 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+check for same color
 ```
 
 Input:
 
 ```text
-
+Red
+Red
 ```
 
 Expected output:
 
 ```text
-
+Red
 ```
 
 Actual output:
 
 ```text
-
+Red
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +206,32 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+for error
 ```
 
 Input:
 
 ```text
-
+Black
+Blue
 ```
 
 Expected output:
 
 ```text
-
+Error
 ```
 
 Actual output:
 
 ```text
-
+Error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +241,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +259,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -305,10 +313,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes|
+| I understand my final code. |Yes|
+| I recorded the real OJ status. |Yes|
+| I did not copy AI-generated text directly into this file. |Yes|
+| I did not copy code from another person. |Yes|
+| If I received human help, I disclosed it in this file. |No|
+| I submitted the final code to the OJ by myself. |Yes|
