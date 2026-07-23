@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-OJ
+OJ3025-Season
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+551674	
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-
+0-15 minutes
 ```
 
 Choose one:
@@ -73,12 +73,17 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
+ask me to find season base on mount and day
 
 Input:
+month and day int input
 
 Output:
+print season base on month if day<=21 and month %3 ==0
++1 season
 
 Constraints:
+if season[4] need to change to [0]
 ```
 
 ---
@@ -98,9 +103,24 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:get month and day int input
+Step 2:make season dic 0=winter 1=spring 2=summer 3=fall
+        and make x=0 to collect number
+Step 3: if 1 <= month <= 3:
+            x = 0
+        elif 4 <= month <= 6:
+            x = 1
+        elif 7 <= month <= 9:
+            x = 2
+        elif 10 <= month <= 12:
+            x = 3
+        to find season
+Step 4: if not month%3 and day >=21:
+            x += 1
+            if x == 4:
+                x = 0
+        to find if it change season at 21 of every 3 month
+Step 5: print(season[x])
 ```
 
 ---
@@ -120,7 +140,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+same as my first plan
 ```
 
 ---
@@ -140,31 +160,32 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+to check in ijudge
 ```
 
 Input:
 
 ```text
-
+1
+21
 ```
 
 Expected output:
 
 ```text
-
+winter
 ```
 
 Actual output:
 
 ```text
-
+winter
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -172,31 +193,32 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+to check in ijudge
 ```
 
 Input:
 
 ```text
-
+3
+21
 ```
 
 Expected output:
 
 ```text
-
+spring
 ```
 
 Actual output:
 
 ```text
-
+spring
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -204,31 +226,32 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+check if fall to winter work
 ```
 
 Input:
 
 ```text
-
+12
+21
 ```
 
 Expected output:
 
 ```text
-
+winter
 ```
 
 Actual output:
 
 ```text
-
+winter
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass 
 ```
 
 ---

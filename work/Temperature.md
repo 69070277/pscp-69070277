@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-OJ
+OJ3022-temperature
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+564749
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-
+0-15 minutes
 ```
 
 Choose one:
@@ -73,12 +73,16 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
+this problem ask me to find second temerature unit
 
 Input:
+tem to collect float temperature  fst to collect str of before change unit  snd to collect str of after change unit
 
 Output:
+print after change
 
 Constraints:
+need to get C = 0 cause pep8
 ```
 
 ---
@@ -98,9 +102,13 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:get tem = float input and fst,snd = str input
+        and make C=0
+Step 2:use formula to every unit change to Celcius
+        if it already celcius make fst = C
+Step 3:change C to other unit as K,R,F by use formula
+Step 4:print output by using snd check it is C,K,F,R and make all 
+        of it using :.2f
 ```
 
 ---
@@ -120,7 +128,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+same as first
 ```
 
 ---
@@ -140,31 +148,33 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+check asw in ijudge
 ```
 
 Input:
 
 ```text
-
+37.6
+C
+K
 ```
 
 Expected output:
 
 ```text
-
+310.75
 ```
 
 Actual output:
 
 ```text
-
+310.75
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -172,31 +182,33 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+check asw in ijudge
 ```
 
 Input:
 
 ```text
-
+100
+R
+C
 ```
 
 Expected output:
 
 ```text
-
+-217.59
 ```
 
 Actual output:
 
 ```text
-
+-217.59
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -204,31 +216,33 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+check same unit
 ```
 
 Input:
 
 ```text
-
+100
+C
+C
 ```
 
 Expected output:
 
 ```text
-
+100.00
 ```
 
 Actual output:
 
 ```text
-
+100.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
